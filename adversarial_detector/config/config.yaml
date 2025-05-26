@@ -1,0 +1,18 @@
+detection:
+  pixel_threshold: 0.15
+  frequency_threshold: 0.3
+  steganography_threshold: 0.2
+  ensemble_threshold: 0.4
+  
+model:
+  cnn_model_path: "data/models/adversarial_cnn.pth"
+  autoencoder_path: "data/models/autoencoder.pth"
+  
+analysis:
+  dct_blocks: 8
+  wavelet_type: "db4"
+  lsb_channels: ["R", "G", "B"]
+  
+visualization:
+  save_plots: true
+  plot_dir: "results/plots/"
